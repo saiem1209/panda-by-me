@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* nav section */
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-button{
+    position: relative;
+}
+
+.search-button input{
+    width: 508.94px;
+    /* height: 48px; */
+    background: rgb(241, 241, 241);
+    border-radius: 66px;
+    border: none;
+    padding: 12px;
+}
+
+.search-button i{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    color: rgb(186, 186, 186);
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    font-size: 16px;
+    font-weight: 500px;
+    
+}
+
+/* banner-section */
+
+.banner-section{
+    background-color: rgb(254, 234, 233);
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+}
+
+.figure figure img{
+    width: 402px;
+height: 378px;
+}
+
+.banner-section h2{
+    color: rgb(31, 31, 31);
+font-size: 56px;
+font-weight: 700;
+line-height: 84px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.banner-section p{
+    color: rgb(78, 78, 78);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+}
+.price{
+    color: rgb(255, 19, 111);
+font-family: Poppins;
+font-size: 41px;
+font-weight: 500;
+line-height: 62px;
+letter-spacing: 0%;
+text-align: left;
+}
