@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .container{
@@ -94,7 +95,7 @@ font-weight: 400;
 line-height: 26px;
 letter-spacing: 0%;
 text-align: left;
-width: 456px;
+max-width: 500px;
 }
 .price{
     color: rgb(255, 19, 111);
@@ -105,4 +106,57 @@ line-height: 62px;
 letter-spacing: 0%;
 text-align: left;
 display: block;
+}
+
+
+/* catagories section */
+
+.catagories{
+    margin-top: 64px;
+}
+
+.catagories h2{
+    margin-left: 80px;
+    color: rgb(31, 31, 31);
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+}
+.section-content{
+    display: flex;
+    gap: 24px;
+    margin-left: 80px;
+}
+
+.catagories-card{
+    display: flex;
+    align-items: center;
+    width: 359px;
+    height: 120px;
+    border-radius: 12px;
+    gap: 76px;
+}
+
+.catagories-card img{
+    width: 68.21px;
+    height: 90px;
+}
+
+.catagories-card h2{
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.card-watch{
+    background: linear-gradient(151.85deg, rgb(255, 156, 53) 14.537%,rgb(255, 208, 25) 84.486%);
+}
+
+.card-bag{
+    /* Linear */
+    background: linear-gradient(180.00deg, rgb(255, 88, 155) -0.006%,rgb(255, 19, 111) 99.994%);
+}
+
+.card-shoes{
+    background: linear-gradient(170.38deg, rgb(66, 137, 255) 15.416%,rgb(63, 7, 248) 74.29%);
 }
