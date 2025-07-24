@@ -112,7 +112,7 @@ display: block;
 /* catagories section */
 
 .catagories{
-    margin-top: 64px;
+    margin: 64px auto;
 }
 
 .catagories h2{
