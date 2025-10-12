@@ -19,5 +19,5 @@ registrationBtn.addEventListener('click', function(e){
 const loginBtn = document.getElementById("login-button");
 
 loginBtn.addEventListener('click', function(e){
-    
+    window.location.href=('./login.html');
 })
