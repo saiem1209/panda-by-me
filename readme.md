@@ -1,1 +1,0 @@
-[Live Link](https://habib-utsho.github.io/B12_c2_panda-commerce/)
