@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>panda-commerce</title>
-    <!-- google fonts cdn -->
+    <!-- google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,7 +41,7 @@
           <input type="text" placeholder="Search" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <ul class="nav-list">
+        <ul class="nav-list flex items-center">
           <li><a href="">Home</a></li>
           <li><a href="">Product</a></li>
           <li><a href="">About Us</a></li>
@@ -95,7 +95,160 @@
           </div>
         </div>
       </section>
+
+      <!-- product card -->
+      <section class="bg-[#F4F4F4]">
+        <!-- shoes card section -->
+        <div class="max-w-[1100px] mx-auto">
+          <div class="flex justify-between p-4 items-center">
+            <h2 class="font-bold text-3xl">Shoes</h2>
+            <p class="text-[#FF9D00]">See All</p>
+          </div>
+          <div></div>
+
+          <div class="flex gap-5">
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Reebok Dart Men’s Shoes</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="card-actions justify-end items-center">
+                  <p class="font-semibold text-2xl">$1569</p>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img src="./assets/images/shoes/shoe-3.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Reebok Pump</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="card-actions justify-end items-center">
+                  <p class="font-semibold text-2xl">$1009</p>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img src="./assets/images/shoes/shoe-2.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Reebok All Terrain</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="card-actions justify-end items-center">
+                  <p class="font-semibold text-2xl">$1289</p>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Backpack section -->
+        <div class="max-w-[1100px] mx-auto">
+          <div class="flex justify-between p-4 items-center">
+            <h2 class="font-bold text-3xl">Backpack</h2>
+            <p class="text-[#FF9D00]">See All</p>
+          </div>
+          <div></div>
+
+          <div class="flex gap-5">
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img src="./assets/images/bags/bag-1.png" alt="Bags" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Ison Backpack</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="card-actions justify-end items-center">
+                  <p class="font-semibold text-2xl">$1569</p>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img src="./assets/images/bags/bag-2.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Biaowang Backpack</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="card-actions justify-end items-center">
+                  <p class="font-semibold text-2xl">$1009</p>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img src="./assets/images/bags/bag-3.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Dxyizu WS54 Smart</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="card-actions justify-end items-center">
+                  <p class="font-semibold text-2xl">$1289</p>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <section class="bg-white">
+        <div class="mt-4">
+          <div
+            class="container bg-[#fff2f1] h-[300px] flex flex-col items-center justify-center rounded-2xl"
+          >
+          <h2 class="font-semibold">Subscribe to get new product updates</h2>
+            <div class="join flex mt-4">
+              <div>
+                <label class="input validator join-item">
+                  <input type="email" placeholder="mail@site.com" required />
+                </label>
+                <div class="validator-hint hidden">
+                  Enter valid email address
+                </div>
+              </div>
+              <button class="btn btn-neutral join-item">Subscribe</button>
+            </div>
+          </div>
+          <aside>
+            <p class="text-center">
+              Copyright © - All right reserved by PANDA Industries Ltd
+            </p>
+          </aside>
+        </div>
+      </section>
+    </footer>
 
     <script src="index.js"></script>
   </body>
