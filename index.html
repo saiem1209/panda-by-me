@@ -104,12 +104,10 @@
         <div class="max-w-[1100px] mx-auto">
           <div class="flex justify-between p-4 items-center">
             <h2 class="font-bold text-3xl">Shoes</h2>
-            
-            <a class="text-[#FF9D00]" href="">See All</a>
-          </div>
-          <div></div>
 
-          <div class="flex gap-5">
+            <a class="text-[#FF9D00]" id="all-shoes" href="">See All</a>
+          </div>
+          <div class="flex gap-5 mb-2">
             <div class="card bg-base-100 w-96 shadow-sm">
               <figure>
                 <img
@@ -162,6 +160,10 @@
               </div>
             </div>
           </div>
+          <div
+            id="products-container"
+            class="grid grid-cols-3 gap-5 justify-center"
+          ></div>
         </div>
         <!-- Backpack section -->
         <div class="max-w-[1100px] mx-auto">
@@ -169,7 +171,6 @@
             <h2 class="font-bold text-3xl">Backpack</h2>
             <a class="text-[#FF9D00]" href="">See All</a>
           </div>
-          <div></div>
 
           <div class="flex gap-5">
             <div class="card bg-base-100 w-96 shadow-sm">
@@ -221,13 +222,17 @@
               </div>
             </div>
           </div>
+          <div
+            id="bag-container"
+            class="grid grid-cols-3 gap-5 justify-center"
+          ></div>
         </div>
       </section>
     </main>
 
     <footer>
       <section class="bg-white">
-        <div class="mt-4">
+        <div class="mt-6">
           <div
             class="container bg-[#fff2f1] h-[300px] flex flex-col items-center justify-center rounded-2xl"
           >
