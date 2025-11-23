@@ -68,7 +68,7 @@
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
-                <span class="badge badge-sm indicator-item">8</span>
+                <span class="badge badge-sm indicator-item " id="total-cart">8</span>
               </div>
             </div>
             <div
@@ -76,7 +76,7 @@
               class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
             >
               <div class="card-body">
-                <span class="text-lg font-bold">8 Items</span>
+                <span class="text-lg font-bold"> <span id="total-cartt">8</span> Items</span>
                 <span class="text-info">Subtotal: $999</span>
                 <div class="card-actions">
                   <button class="btn btn-primary btn-block">View cart</button>
@@ -85,7 +85,10 @@
             </div>
           </div>
           <!--  -->
-          <button id="h-login-btn" class="btn btn-active btn-colour btn-xs ml-4">
+          <button
+            id="h-login-btn"
+            class="btn btn-active btn-colour btn-xs ml-4"
+          >
             Login
           </button>
           <button
@@ -149,7 +152,7 @@
             <a class="text-[#FF9D00]" id="all-shoes" href="">See All</a>
           </div>
           <div class="flex gap-5 mb-2">
-            <div class="card bg-base-100 w-96 shadow-sm">
+            <div class="card bg-base-100 w-96 shadow-sm relative">
               <figure>
                 <img
                   src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -157,14 +160,21 @@
                 />
               </figure>
               <div class="card-body">
-                <h2 class="card-title">Reebok Dart Men’s Shoes</h2>
+                <div class="flex justify-between">
+                  <h2 class="card-title">Reebok Dart Men’s Shoes</h2>
+                </div>
+
                 <p>
                   A card component has a figure, a body part, and inside body
                   there are title and actions parts
                 </p>
-                <div class="card-actions justify-end items-center">
-                  <p class="font-semibold text-2xl product-price">$1569</p>
-                  <button class="btn btn-primary">Buy Now</button>
+                <p class="font-semibold text-2xl product-price">$1569</p>
+
+                <div class="card-actions justify-between items-center">
+                  <button class="btn btn-xs cart-btn">
+                    <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                  </button>
+                  <button class="btn btn-primary" id="buy-btn">Buy Now</button>
                 </div>
               </div>
             </div>
@@ -178,8 +188,12 @@
                   A card component has a figure, a body part, and inside body
                   there are title and actions parts
                 </p>
-                <div class="card-actions justify-end items-center">
-                  <p class="font-semibold text-2xl product-price">$1009</p>
+                <p class="font-semibold text-2xl product-price">$1009</p>
+                <div class="card-actions justify-between items-center">
+                  <button class="btn btn-xs cart-btn">
+
+                    <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                  </button>
                   <button class="btn btn-primary">Buy Now</button>
                 </div>
               </div>
@@ -194,8 +208,12 @@
                   A card component has a figure, a body part, and inside body
                   there are title and actions parts
                 </p>
-                <div class="card-actions justify-end items-center">
-                  <p class="font-semibold text-2xl product-price">$1289</p>
+                <p class="font-semibold text-2xl product-price">$1289</p>
+
+                <div class="card-actions justify-between items-center">
+                  <button class="btn btn-xs cart-btn">
+                    <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                  </button>
                   <button class="btn btn-primary">Buy Now</button>
                 </div>
               </div>
@@ -224,8 +242,12 @@
                   A card component has a figure, a body part, and inside body
                   there are title and actions parts
                 </p>
-                <div class="card-actions justify-end items-center">
-                  <p class="font-semibold text-2xl product-price">$1569</p>
+                <p class="font-semibold text-2xl product-price">$1569</p>
+
+                <div class="card-actions justify-between items-center">
+                  <button class="btn btn-xs cart-btn">
+                    <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                  </button>
                   <button class="btn btn-primary">Buy Now</button>
                 </div>
               </div>
@@ -240,8 +262,12 @@
                   A card component has a figure, a body part, and inside body
                   there are title and actions parts
                 </p>
-                <div class="card-actions justify-end items-center">
-                  <p class="font-semibold text-2xl product-price">$1009</p>
+                <p class="font-semibold text-2xl product-price">$1009</p>
+
+                <div class="card-actions justify-between items-center">
+                  <button class="btn btn-xs cart-btn">
+                    <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                  </button>
                   <button class="btn btn-primary">Buy Now</button>
                 </div>
               </div>
@@ -256,8 +282,11 @@
                   A card component has a figure, a body part, and inside body
                   there are title and actions parts
                 </p>
-                <div class="card-actions justify-end items-center">
-                  <p class="font-semibold text-2xl product-price">$1289</p>
+                <p class="font-semibold text-2xl product-price">$1289</p>
+                <div class="card-actions justify-between items-center">
+                  <button class="btn btn-xs cart-btn">
+                    <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                  </button>
                   <button class="btn btn-primary">Buy Now</button>
                 </div>
               </div>

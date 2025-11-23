@@ -31,8 +31,12 @@ function displayProducts(productsArray) {
                 <div class="card-body">
                     <h2 class="card-title">${product.productName}</h2>
                     <p>${product.Description}</p>
-                    <div class="card-actions justify-end items-center">
-                        <p class="font-semibold text-2xl">${product.price}</p>
+                     <p class="font-semibold text-2xl">${product.price}</p>
+
+                    <div class="card-actions justify-between items-center">
+                    <button class="btn btn-xs cart-btn">
+                    <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                  </button>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -72,8 +76,12 @@ function displayProductss(productsArray) {
                 <div class="card-body">
                     <h2 class="card-title">${product.productName}</h2>
                     <p>${product.Description}</p>
-                    <div class="card-actions justify-end items-center">
-                        <p class="font-semibold text-2xl">${product.price}</p>
+                    <p class="font-semibold text-2xl">${product.price}</p>
+
+                    <div class="card-actions justify-between items-center">
+                    <button class="btn btn-xs cart-btn">
+                    <i class="fa-solid fa-cart-plus"></i>Add to Cart
+                    </button>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -94,21 +102,35 @@ allBags.addEventListener("click", function (e) {
     .catch((error) => console.error("Error loading products:", error));
 });
 
+ 
+document.body.addEventListener("click", function (e) {
+  // Check if the clicked element (or its closest parent) is a button with the class 'cart-btn'
+  const clickedButton = e.target.closest(".cart-btn");
 
-
-
-const CartBtn = document.querySelectorAll('.add-to-cart');
-for(let cart of CartBtn){
-    cart.addEventListener('click', increaseCart)
+  if (clickedButton) {
+    increaseCartCount();
+    increaseCartCountt();
+  }
+});
+function increaseCartCount() {
+  const oldCart = document.getElementById("total-cart").innerText;
+  const oldd = parseInt(oldCart);
+  const neWvalue = oldd + 1;
+  document.getElementById("total-cart").innerText = neWvalue;
 }
-function increaseCart(){
-    const oldCoin = document.getElementById('coin-amnt').innerText;
-    const OldCoinValue = parseInt(oldCoin);
-    const neWvalue = OldCoinValue - 20;
-    if(neWvalue < 0){
-        alert('not enough coin');
-        return;
-    }
-    document.getElementById('coin-amnt').innerText = neWvalue;
-
+function increaseCartCountt() {
+  const oldCart = document.getElementById("total-cartt").innerText;
+  const oldd = parseInt(oldCart);
+  const neWvalue = oldd + 1;
+  document.getElementById("total-cartt").innerText = neWvalue;
 }
+
+
+
+const buyBtn = document.getElementById("buy-btn");
+
+buyBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+    window.location.href = "./orderpage.html";
+
+});
