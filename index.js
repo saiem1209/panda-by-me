@@ -37,7 +37,7 @@ function displayProducts(productsArray) {
                     <button class="btn btn-xs cart-btn">
                     <i class="fa-solid fa-cart-plus"></i>Add to Cart
                   </button>
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary buy-btn">Buy Now</button>
                     </div>
                 </div>
     `;
@@ -82,7 +82,7 @@ function displayProductss(productsArray) {
                     <button class="btn btn-xs cart-btn">
                     <i class="fa-solid fa-cart-plus"></i>Add to Cart
                     </button>
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary buy-btn">Buy Now</button>
                     </div>
                 </div>
     `;
@@ -127,10 +127,14 @@ function increaseCartCountt() {
 
 
 
-const buyBtn = document.getElementById("buy-btn");
+const buyButtons = document.querySelectorAll(".buy-btn");
 
-buyBtn.addEventListener("click", function (e) {
-  e.preventDefault();
+buyButtons.forEach(button => {
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
     window.location.href = "./orderpage.html";
-
+  });
 });
+
+
+

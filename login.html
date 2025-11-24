@@ -13,7 +13,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <!-- nav bar -->
@@ -31,12 +31,29 @@
         <label class="label">Email</label>
         <input id="email" type="email" class="input" placeholder="Email" />
 
-        <label  class="label">Password</label>
-        <input id="password" type="password" class="input" placeholder="Password" />
+        <label class="label">Password</label>
+        <input
+          id="password"
+          type="password"
+          class="input"
+          placeholder="Password"
+        />
 
         <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
       </fieldset>
     </div>
+    <div class="fab">
+      <!-- a focusable div with tabindex is necessary to work on all browsers. role="button" is necessary for accessibility -->
+      <div tabindex="0" role="button" class="btn btn-xl btn-circle btn-primary">
+        <span class="text-[12px]">Support</span>
+      </div>
+
+      <!-- buttons that show up when FAB is open -->
+      <button class="btn btn-lg btn-circle"><span class="text-[12px]">Email</span></button>
+      <button class="btn btn-lg btn-circle"><span class="text-[12px]">Facebook</span></button>
+      <button class="btn btn-lg btn-circle"><span class="text-[12px]">Call</span></button>
+    </div>
+    <!--  -->
 
     <script src="login.js"></script>
   </body>
